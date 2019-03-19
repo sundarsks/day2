@@ -1,277 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>Flipkart</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-* {
-  box-sizing: border-box;
-}
-.flex-container {
-  display: flex;
-  align-items: stretch;
-  background-color:#f1f3f6;
-}
+<link rel="stylesheet" href="style.css">
 
-.flex-container > div {
-  color: black;
-  width: 100%;
-  margin: 10px;
-  line-height: 75px;
-  font-size: 20px;
-}
-/* Style the header */
-/*.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}*/
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-* {box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #2874f0;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav .search-container {
-  float: left;
-  margin-left:150px;
-  width:10%;
-}
-
-.topnav input[type=text] {
-  position: absolute;
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  width:30%;
-}
-
-.topnav .search-container button {
-  
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-.logo
-{
-    max-width:70%;
-    padding: 10px;
-}
-.search
-{
-    left: 440px;
-    /* margin-right: 0px; */
-    position: relative;
-    /* right: -1px; */
-    top: 15px;
-    color:#2196F3;
-
-}
-.explore
-{
-    top: 0;
-    margin: -15px 10px auto;
-    padding: 0px;
-    color:white;
-    font-style: italic;
-    
-}
-.plus
-{
-    max-width: 0.5%;
-    top: 30px;
-    position: absolute;
-    left: 235px;
-    
-}
-.fa-shopping-cart
-{
-    color:white;
-}
-.fa-shopping-cart a:hover
-{
-    color:black;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:white;
-  top: 120;
-  width: 100%;
-}
-
-li {
-    float: left;
-    padding: 15px;
-}
-/*ul li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}*/
-li a {
-  display: block;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-}
-.banner
-{
-width: 100%;
-}
-p
-{
-margin: 0 auto;
-
-}
-.inner
-{
-margin: -40px auto;
-color:lightgrey;
-font-size:16px;
-
-}
-.price
-{
-    margin: -10px auto;
-}
-.head
-{
-    border-bottom: 1px solid lightgrey;
-}
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-.ul1
-{
-    list-style-type: circle !important;
-}
-.li1{
-  line-height: 15px;
-  font-size: 14px;
-
-}
-.offer
-{
-    color:limegreen;
-}
-
-</style>
 </head>
 <body>
-
-
     <div class="topnav">
         <a href="#home"><i class="fa fa-shopping-cart"></i> Cart</a>
         <a href="#about">More</a>
         <a href="#contact">Login & SignUp</a>
         <input type="text" placeholder="Search.." name="search"><i class="fa fa-search search"></i>
         <div class="search-container">
-           <div> <img src="images/logo.png" alt="logo" class="logo"> <h5 class="explore">Explore<span style="color:gold;">Plus</span></h5><img src="images/plus.png"  alt="plus" class="plus"></div>
+           <div> <img src="images/logo.png" alt="logo" class="logo"> <h5 class="explore">Explore<span style="color:gold;"> Plus</span></h5><img src="images/plus.png"  alt="plus" class="plus"></div>
         </div>
       </div>
       <div id="menu-outer">
             <div class="table">
           <ul id="horizontal-list">
-            <li><a class="active" href="#home">Electronics <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <li><a href="#home">Electronics <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#news">Tv & Applicances <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#contact">Men <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#about">Women <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <li><a class="active" href="#home">Baby & kids <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <li><a href="#home">Baby & kids <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#news">Home & Furniture <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#contact">Sports,Books & more <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
             <li><a href="#about">Offer Zone <i class="fa fa-caret-down" aria-hidden="true"></i></a> </li> 
@@ -279,35 +33,55 @@ font-size:16px;
           </div>
         </div>
 <div class="header">
-  <img src="images/bg.jpg" alt="banner" class="banner">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+          <img src="images/bg.jpg" style="width:100%">
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img src="images/bg2.jpg" style="width:100%">
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img src="images/bg3.jpg" style="width:100%">
+        
+        </div>
+        
+        </div>
 </div>
 
 <div class="flex-container">
-        <div style="flex-basis:400px;padding: 10px;background-color:white;">
+        <div class="flex1" >
             <p class="head">Filters</p>
             <p style="font-size:14px">Categories</p>
            <p class="inner"> <i class="fa fa-caret-left" aria-hidden="true"></i> Mobile & Accessories</p>
         <p style="border-bottom: 1px solid lightgrey;">Mobiles</p>
         <p class="price"> Price</p>
-        <input type="range" min="1000" max="5000" value="50" class="slider" id="myRange">
+        <input type="range" min="1000" max="70000" value="50" class="slider" id="myRange">
         <p>Range: <span id="demo"></span></p>
     </div>
-        <div style="background-color:white;padding:15px;display:flex;">
+        <div class="flex2">
             <div></div>
             <div style="width:30%;text-align: center;">
-            <img src="images/redmi_note_7.jpeg">
+            <img src="images/redmi_note_7.jpeg" onclick="myFunction()" class="pointer">
             </div>
             <div class="phone1" style="width:40%;">
                     <p>   <i class="fa fa-heart-o" aria-hidden="true"></i>  Redmi Note 7(Gold,64Gb)</p>
-                <ul class="ul1">
+                <ol class="ul1">
                     <li class="li1">4 GB RAM | 64 GB ROM | Expandable Upto 128 GB</li>
                     <li class="li1">15.21 cm (5.99 inch) Full HD+ Display</li>
                     <li class="li1">12MP + 5MP | 20MP Front Camera</li>
                     <li class="li1">4000 mAh Li Polymer Battery</li>
                     <li class="li1">Qualcomm Snapdragon 636 Processor</li>
                     <li class="li1">Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories</li>
-                </ul></div>
-                <div style="background-color: white;line-height: 30px;margin-top: 30px;margin-left: 30px;width:30%;font-size:16px;">
+                </ol></div>
+                <div class="flex3">
                                     <span class="offer_price">₹9,999</span> <img height="21" src="images/azure.png">
                                     <p>
                                     <span class="amount" style="text-decoration: line-through;color:lightgrey;font-size:16px;">₹12,999</span><span style="color:limegreen;font-size: 14px;"> 23% off</span>
@@ -318,30 +92,72 @@ font-size:16px;
                             <div class="emi">EMI starting from <span class="month">₹333/month</span>
                             </div>
                             <div>
-                                <span class="offer">Offers</span><ul><li class="special">Special Price</li></ul>
+                                <span class="offer">Offers</span><ol><li class="special">Special Price</li></ol>
                             </div>
                         </div>
                     </div>
-                    
+            </div>
+            <div class="flex1div" >
+            <div class="flex2div"></div>
+            <div class="flex3div" id="myDIV">   
+              <button class="tablink" onclick="openPage('Home', this, 'lightcoral','black')" id="defaultOpen">Overview</button>
+              <button class="tablink" onclick="openPage('News', this, 'lightgreen','black')" >Features</button>
+              <button class="tablink" onclick="openPage('Contact', this, 'lightblue','black')">Design</button>
+              <button class="tablink" onclick="openPage('About', this, 'lightpink','black')">Space</button>
+              
+              <div id="Home" class="tabcontent">
+                <h3>Description</h3>
+                 <p>Experience power and performance in your palm with the Redmi Note 7. Every picture that you click comes out beautiful, thanks to its (12 MP + 2 MP) dual-rear camera and the 13 MP front camera. While 16-cm (6.3) FHD+ Dot Notch Display revolutionises your viewing experience, features such as AI Scene Detection, Face Unlock and IR Remote Control make your user experience as convenient as possible.</p>
+             <h3> Product Description </h3>
+                  <p> Hold the Redmi Note 7 in your hand and get ready to revel in an efficient and luxurious smartphone experience. A powerful 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor, a (12 MP + 2 MP) dual-rear camera, a massive 16-cm (6.3) FHD+ Dot Notch Display and features such as AI Scene Detection, Face Unlock, and IR Remote Control come together to provide you with a transcendental smartphone experience. </p>
+                </div>
+              
+              <div id="News" class="tabcontent">
+                <h3>Powerful Performance</h3>
+                <p>The Redmi Note 7 features a 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor and 3 GB of RAM which pave the way for seamless gaming or multitasking. It also comes with 32 GB of storage capacity which allows for easy storing of your media files.</p> 
+                
+                
+                <h3>Stunning Night Photography</h3>
+                <p>By automatically capturing multiple images and combining them into a single, high-quality photo, the Redmi Note 7's camera captures stunning shots even in low-light conditions.</p> 
+
+                <h3> FHD+ Dot Notch Display</h3>
+                <p>Enjoy watching videos and playing games on the Redmi Note 7's 16-cm (6.3) FHD+ Dot Notch Display which comes with an aspect ratio of 19.5:9. Its FHD+ 2340 x 1080 resolution provides crisp and sharp visuals, enriching your overall viewing experience.</p>
+              </div>
+              
+              <div id="Contact" class="tabcontent">
+                  <h3>Long-lasting Battery </h3>
+                  <p>Its massive 4000 mAh high-capacity battery makes the entertainment last longer and lets you balance work and play without running out of power.</p>
+
+                  <h3>Elegant Glass Back </h3>
+                  <p>The Corning Gorilla Glass 5 and the reflective glass back add a touch of luxury and elegance..</p>
+              </div>
+              
+              <div id="About" class="tabcontent">
+               
+               <h3> Splash-proof Technology </h3>
+                <p> Don't worry about getting a few splashes, as the Redmi Note 7's high level of durability makes it resistant to liquid damage. </p>
+
+                <h3>AI Face Unlock </h3>
+<p>You just need to look at your phone to unlock it. This feature automatically recognizes your face and unlocks itself, immediately after you turn on the screen. </p>
+              </div></div>
             </div>
 			<div class="flex-container">
-				<div style="background-color:white;padding:15px;display:flex;margin-left: 300px;">
-				<div></div>
+				<div class="flex4" style="background-color:white;padding:15px;display:flex;margin-left: 342px;">
             <div style="width:30%;text-align: center;">
-            <img src="images/honor_10.jpeg">
+            <img src="images/honor_10.jpeg" onclick="myFunction2()" class="pointer">
             </div>
 			
 			
             <div class="phone1" style="width:40%;">
 			                    <p>   <i class="fa fa-heart-o" aria-hidden="true"></i> Honor 10 Lite (Sapphire Blue, 64 GB)</p>
-                <ul class="ul1">
+                <ol class="ul1">
 					<li class="li1">4 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
 					<li class="li1">15.77 cm (6.21 inch) FHD+ Display</li>
 					<li class="li1">13MP + 2MP | 24MP Front Camera</li>
 					<li class="li1">3400 mAh Lithium Polymer Battery</li>
 					<li class="li1">Kirin 710 2.2GHz Octa Core Processor</li>
 					<li class="li1">Brand Warranty of 1 Year Available for Mobile, 6 Months for Battery and Charger, 3 Months for Data Cable</li>
-			</ul>
+                </ol>
 				</div>
                 <div style="background-color: white;line-height: 30px;margin-top: 30px;margin-left: 30px;width:30%;font-size:16px;">
                                     <span class="offer_price">₹13,999</span> <img height="21" src="images/azure.png">
@@ -354,61 +170,152 @@ font-size:16px;
                             <div class="emi">EMI starting from <span class="month">₹333/month</span>
                             </div>
                             <div>
-                                <span class="offer">Offers</span><ul><li class="special">Special Price</li></ul>
+                                <span class="offer">Offers</span><ol><li class="special">Special Price</li></ol>
                             </div>
                         </div>
                     </div>
                     
             </div>
+            <div style="display:flex;background-color: #f1f3f6;" >
+                <div style="width:22%;    background-color: #f1f3f6"></div>
+                <div style="width:77.5%;background-color: #f1f3f6;" id="myDIV2">   
+                  <button class="tablink" onclick="openPage('Home1', this, 'lightcoral','black')" id="defaultOpen1">Overview</button>
+                  <button class="tablink" onclick="openPage('News1', this, 'lightgreen','black')" >Features</button>
+                  <button class="tablink" onclick="openPage('Contact1', this, 'lightblue','black')">Design</button>
+                  <button class="tablink" onclick="openPage('About1', this, 'lightpink','black')">Space</button>
+                  
+                  <div id="Home1" class="tabcontent">
+                    <h3>Description</h3>
+                     <p>Experience power and performance in your palm with the Redmi Note 7. Every picture that you click comes out beautiful, thanks to its (12 MP + 2 MP) dual-rear camera and the 13 MP front camera. While 16-cm (6.3) FHD+ Dot Notch Display revolutionises your viewing experience, features such as AI Scene Detection, Face Unlock and IR Remote Control make your user experience as convenient as possible.</p>
+                 <h3> Product Description </h3>
+                      <p> Hold the Redmi Note 7 in your hand and get ready to revel in an efficient and luxurious smartphone experience. A powerful 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor, a (12 MP + 2 MP) dual-rear camera, a massive 16-cm (6.3) FHD+ Dot Notch Display and features such as AI Scene Detection, Face Unlock, and IR Remote Control come together to provide you with a transcendental smartphone experience. </p>
+                    </div>
+                  
+                  <div id="News1" class="tabcontent">
+                    <h3>Powerful Performance</h3>
+                    <p>The Redmi Note 7 features a 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor and 3 GB of RAM which pave the way for seamless gaming or multitasking. It also comes with 32 GB of storage capacity which allows for easy storing of your media files.</p> 
+                    
+                    
+                    <h3>Stunning Night Photography</h3>
+                    <p>By automatically capturing multiple images and combining them into a single, high-quality photo, the Redmi Note 7's camera captures stunning shots even in low-light conditions.</p> 
+    
+                    <h3> FHD+ Dot Notch Display</h3>
+                    <p>Enjoy watching videos and playing games on the Redmi Note 7's 16-cm (6.3) FHD+ Dot Notch Display which comes with an aspect ratio of 19.5:9. Its FHD+ 2340 x 1080 resolution provides crisp and sharp visuals, enriching your overall viewing experience.</p>
+                  </div>
+                  
+                  <div id="Contact1" class="tabcontent">
+                      <h3>Long-lasting Battery </h3>
+                      <p>Its massive 4000 mAh high-capacity battery makes the entertainment last longer and lets you balance work and play without running out of power.</p>
+    
+                      <h3>Elegant Glass Back </h3>
+                      <p>The Corning Gorilla Glass 5 and the reflective glass back add a touch of luxury and elegance..</p>
+                  </div>
+                  
+                  <div id="About1" class="tabcontent">
+                   
+                   <h3> Splash-proof Technology </h3>
+                    <p> Don't worry about getting a few splashes, as the Redmi Note 7's high level of durability makes it resistant to liquid damage. </p>
+    
+                    <h3>AI Face Unlock </h3>
+    <p>You just need to look at your phone to unlock it. This feature automatically recognizes your face and unlocks itself, immediately after you turn on the screen. </p>
+                  </div></div>
+                </div>
 			
 			<div class="flex-container">
-				<div style="background-color:white;padding:15px;display:flex;margin-left: 300px;">
+				<div style="background-color:white;padding:15px;display:flex;margin-left: 342px;">
 				<div></div>
             <div style="width:30%;text-align: center;">
-            <img src="images/samsung_10.jpeg">
+            <img src="images/samsung_10.jpeg" onclick="myFunction3()" class="pointer">
             </div>
 				<div class="phone1" style="width:40%;">
 			                    <p>   <i class="fa fa-heart-o" aria-hidden="true"></i> Samsung Galaxy S10 (Black, 128 GB)</p>
-                <ul class="ul1">
+                <ol class="ul1">
 					<li class="li1">8 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
 					<li class="li1">15.49 cm (6.1 inch) Quad HD+ Display</li>
 					<li class="li1">16MP + 12MP + 12MP | 10MP Front Camera</li>
-					<li class="li1">3400 mAh Lithium-ion Battery</li>
+					<li class="li1">3400 mAh Lithium-ion Battery with warranty</li>
 					<li class="li1">Exynos 9 9820 Processor</li>
 					<li class="li1">Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories</li>
-				</ul>
+                </ol>
 				</div>
                 <div style="background-color: white;line-height: 30px;margin-top: 30px;margin-left: 30px;width:30%;font-size:16px;">
-                                    <span class="offer_price">₹66,900</span> <img height="21" src="images/azure.png">
-                                                              
-                                <span>Up to <span class="exchange">₹17,450</span> Off on Exchange</span>
+                  <span class="offer_price">₹66,700</span> <img height="21" src="images/azure.png">
+                  <p>
+                  <span class="amount" style="text-decoration: line-through;color:lightgrey;font-size:16px;">₹70,000</span><span style="color:limegreen;font-size: 14px;"> 23% off</span>
+              </p>
+             
+              <span>Up to <span class="exchange">₹19,700</span> Off on Exchange</span>
 
-                            <div class="emi">EMI starting from <span class="month">₹2223/month</span>
-                            </div>
-                            <div>
-                                <span class="offer">Offers</span><ul><li class="special">Special Price</li></ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="emi">EMI starting from <span class="month">₹2223/month</span>
+          </div>
+          <div>
+              <span class="offer">Offers</span><ol><li class="special">Special Price</li></ol>
+          </div>
+      </div>
+  </div>
+  
                     
             </div>
+            <div style="display:flex;background-color: #f1f3f6;margin-bottom:10px;" >
+                <div style="width:22%;    background-color: #f1f3f6"></div>
+                <div style="width:77.5%;background-color: #f1f3f6;" id="myDIV3">   
+                  <button class="tablink" onclick="openPage('Home2', this, 'lightcoral','black')" id="defaultOpen2">Overview</button>
+                  <button class="tablink" onclick="openPage('News2', this, 'lightgreen','black')" >Features</button>
+                  <button class="tablink" onclick="openPage('Contact2', this, 'lightblue','black')">Design</button>
+                  <button class="tablink" onclick="openPage('About2', this, 'lightpink','black')">Space</button>
+                  
+                  <div id="Home2" class="tabcontent">
+                    <h3>Description</h3>
+                     <p>Experience power and performance in your palm with the Redmi Note 7. Every picture that you click comes out beautiful, thanks to its (12 MP + 2 MP) dual-rear camera and the 13 MP front camera. While 16-cm (6.3) FHD+ Dot Notch Display revolutionises your viewing experience, features such as AI Scene Detection, Face Unlock and IR Remote Control make your user experience as convenient as possible.</p>
+                 <h3> Product Description </h3>
+                      <p> Hold the Redmi Note 7 in your hand and get ready to revel in an efficient and luxurious smartphone experience. A powerful 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor, a (12 MP + 2 MP) dual-rear camera, a massive 16-cm (6.3) FHD+ Dot Notch Display and features such as AI Scene Detection, Face Unlock, and IR Remote Control come together to provide you with a transcendental smartphone experience. </p>
+                    </div>
+                  
+                  <div id="News2" class="tabcontent">
+                    <h3>Powerful Performance</h3>
+                    <p>The Redmi Note 7 features a 2.2 GHz Qualcomm Snapdragon 660 AIE octa-core processor and 3 GB of RAM which pave the way for seamless gaming or multitasking. It also comes with 32 GB of storage capacity which allows for easy storing of your media files.</p> 
+                    
+                    
+                    <h3>Stunning Night Photography</h3>
+                    <p>By automatically capturing multiple images and combining them into a single, high-quality photo, the Redmi Note 7's camera captures stunning shots even in low-light conditions.</p> 
+          
+                    <h3> FHD+ Dot Notch Display</h3>
+                    <p>Enjoy watching videos and playing games on the Redmi Note 7's 16-cm (6.3) FHD+ Dot Notch Display which comes with an aspect ratio of 19.5:9. Its FHD+ 2340 x 1080 resolution provides crisp and sharp visuals, enriching your overall viewing experience.</p>
+                  </div>
+                  
+                  <div id="Contact2" class="tabcontent">
+                      <h3>Long-lasting Battery </h3>
+                      <p>Its massive 4000 mAh high-capacity battery makes the entertainment last longer and lets you balance work and play without running out of power.</p>
+          
+                      <h3>Elegant Glass Back </h3>
+                      <p>The Corning Gorilla Glass 5 and the reflective glass back add a touch of luxury and elegance..</p>
+                  </div>
+                  
+                  <div id="About2" class="tabcontent">
+                   
+                   <h3> Splash-proof Technology </h3>
+                    <p> Don't worry about getting a few splashes, as the Redmi Note 7's high level of durability makes it resistant to liquid damage. </p>
+          
+                    <h3>AI Face Unlock </h3>
+          <p>You just need to look at your phone to unlock it. This feature automatically recognizes your face and unlocks itself, immediately after you turn on the screen. </p>
+                  </div></div>
+                </div>
+
 			
       
 
-<div class="footer">
-  <p>Footer</p>
+<div class="footers">
+    <div class="footer" >
+        <div><img src="images/sell.svg"><span class="footer_head"> Sell On Flipkart</span></div>
+        <div><img src="images/add.svg"><span class="footer_head"> Advertise</span></div>
+        <div><img src="images/gift.svg"><span class="footer_head"> Gift Cards</span></div>
+        <div><img src="images/help.svg"><span class="footer_head"> Help Center</span></div>
+        <span class="copyright">
+           © 2007-<!-- -->2019<!-- --> <span>Flipkart.com.</span>
+        </span>
+        <img src="images/payment.svg">
+     </div>
 </div>
-
-
-
-<script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-output.innerHTML = this.value;
-}
-</script>
+<script src="script.js"></script>
 </body>
 </html>
